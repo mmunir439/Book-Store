@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 14px 1px 20px;
+}
+@media screen and (max-width:555px) {
+   header{
+    display: flex;
+    justify-content: flex-start;
+   }
+}
+ul li{
+list-style: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    justify-content: space-center;
+    width: 50%;
+    list-style: none;
+}
+header ul li{
+
+    padding: 10px 17px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+header ul li a:hover ,h1:hover{
+    text-decoration-line: underline;
+    text-decoration-color: orangered;
+    text-decoration-thickness: 3px;
+}
+/* Mobile header */
+@media screen and (max-width: 555px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    header ul li {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
+/*end of header section */
+/* Mobile Book Cards */
+@media screen and (max-width: 555px) {
+    #book_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #book_list section {
+        width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #book_list section img {
+        width: 80px;
+        height: 100px;
+    }
+
+    section div h4 {
+        font-size: 1.2rem;
+    }
+
+    section div p {
+        font-size: 1rem;
+    }
+
+    section div button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Tablet Book Cards */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #book_list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #book_list section {
+        width: 45%;
+    }
+
+    #book_list section img {
+        width: 100px;
+        height: 120px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 992px) {
+    #book_list {
+        max-width: 80%;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    #book_list section {
+        width: 30%;
+    }
+}
+#book_list{
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+}
+@media  screen and (max-width:555px) {
+    #book_list section img{
+        height: 60px;
+        width: 60px;
+    }
+    #book_list section{
+        text-align: center;
+        border: 1px solid lightblue;
+        margin-left: 4px;
+        border-radius: 10px;
+    
+    }
+}
+#book_list section img{
+    height: 120px;
+    width: 100px;
+}
+section div h4,p,button{
+    padding-bottom: 2px;
+}
+section div button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orangered;
+    border: 2px solid white;
+    color: white;
+}
+section div button:hover{
+   background-color: white;
+   color: black;
+   border: 2px solid black;
+}/*end of photo of books card types*/
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+    
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+footer .social-links a{
+    color: white;
+}
+footer #terms_condition p a{
+    color: white;
+}
+/* mobilelayout */
+@media screen and (max-width: 555px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-info {
+        width: 95%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/*tablet layout*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    #user-info {
+        width: 75%;
+    }
+
+    footer {
+        justify-content: space-evenly;
+        padding: 30px;
+    }
+
+    footer nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}/*end of footer*/

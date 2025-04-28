@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background: #f8f8f8;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul li {
+    padding: 10px;
+ 
+}
+nav ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: burlywood;
+    text-underline-offset: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* User Info Section */
+#user-info {
+    width: 90%;
+    max-width: 600px;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+    
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+footer .social-links a{
+    color: white;
+}
+footer #terms_condition p a{
+    color: white;
+}
+/* mobilelayout */
+@media screen and (max-width: 555px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-info {
+        width: 95%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/*tablet layout*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    #user-info {
+        width: 75%;
+    }
+
+    footer {
+        justify-content: space-evenly;
+        padding: 30px;
+    }
+
+    footer nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}
